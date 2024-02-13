@@ -23,11 +23,14 @@ data-themes="white">
                       <h2 class="card-title text-center">Triangle</h2>
                       <p class="text-center">Area (A) = 0.5 b h</p>
                       <div class="flex">
-                        <input type="text" class="w-24 text-2xl rounded-sm" placeholder="b"><span class="ml-4 mr-2">cm</span>
-                        <input type="text" class="w-24 text-2xl rounded-sm"placeholder="h"><span  class="ml-4 mr-2"> h</span>
+                        <input type="text" id="triangle-base" class="w-24 text-2xl rounded-sm" placeholder="b"><span class="ml-4 mr-2">cm</span>
+                        <input type="text" id="triangle-height" class="w-24 text-2xl rounded-sm"placeholder="h"><span  class="ml-4 mr-2"> h</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl"> Area: <span id="triangle-area"></span> <span >cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -36,6 +39,7 @@ data-themes="white">
                 <h2 class="text-center text-3xl">Area Calculation</h2>
             </div>
         </section>
+        <script src="./js/triangle.js"></script>
     </main>
     <footer>
 
