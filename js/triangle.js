@@ -17,3 +17,4 @@ function calculateTriangleArea(){
     triangleAreaSpan.innerText = area;
     
 }
+
